@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Icon1 from "../../images/destination.svg";
 import Icon2 from "../../images/hotel.svg";
 import Icon3 from "../../images/compass.svg";
-import { animateScroll as scroll } from "react-scroll";
 import {
   ServicesContainer,
   ServicesWrapper,
@@ -14,41 +13,32 @@ import {
 } from "./ServicesElements";
 
 const Services = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
-
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
   return (
     <ServicesContainer id="services">
       <ServicesH1>Our Services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
+          <ServicesIcon src={Icon1} alt="services image" />
           <ServicesH2>Trip Planning</ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+            Book flights, trains, and cars anywhere and anytime with help from
+            our expert travel advisors.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
+          <ServicesIcon src={Icon2} alt="services image" />
           <ServicesH2>Handpicked Hotels</ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+            From budget to luxury, we'll provide you hundreds of hotels to
+            choose from around the world.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
+          <ServicesIcon src={Icon3} alt="services image" />
           <ServicesH2>Tour Guides Guaranteed</ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+            Tour guides are available to take you on tours explaining facts,
+            history, local customs, and more!
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

@@ -23,14 +23,15 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <ImgBg src={BG} />
+        <ImgBg src={BG} alt="background image" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Traveling Made Easy</HeroH1>
         <HeroP>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt
+          Rural or city escape? Sunny islands or snowy mountains? We've got you
+          covered.
         </HeroP>
+        <HeroP></HeroP>
         <HeroBtnWrapper>
           <Button
             to="signup"

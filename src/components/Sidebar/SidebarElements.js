@@ -45,6 +45,10 @@ export const SidebarMenu = styled.ul`
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
   }
+
+  @media screen and (max-height: 480px) {
+    grid-template-rows: repeat(6, 35px);
+  }
 `;
 
 export const SidebarLink = styled(LinkS)`
@@ -57,12 +61,16 @@ export const SidebarLink = styled(LinkS)`
   list-style: none;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: lowercase;
 
   &:hover {
     color: #cf8093;
     transition: 0.2s ease-in-out;
+  }
+
+  @media screen and (max-height: 480px) {
+    font-size: 1rem;
   }
 `;
 
@@ -85,9 +93,13 @@ export const SidebarRoute = styled(LinkR)`
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 
   &:hover {
     transition: all 0.2s ease-in-out;
+  }
+
+  @media screen and (max-height: 480px) {
+    font-size: 14px;
   }
 `;

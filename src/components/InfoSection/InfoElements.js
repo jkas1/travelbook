@@ -4,6 +4,7 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 export const InfoContainer = styled.div`
   color: #fff;
   background: #000;
+  margin: -1px;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -20,6 +21,22 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    height: 600px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 420px;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 470px;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 420px;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -60,7 +77,11 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+
+  @media screen and (max-width: 968px) {
+    font-size: 12px;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -69,9 +90,9 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 968px) {
     font-size: 32px;
   }
 `;
@@ -82,8 +103,12 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 35px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
+
+  @media screen and (max-width: 968px) {
+    font-size: 16px;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -98,8 +123,43 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 500px;
-  height: 350px;
+  height: auto;
   padding-right: 0;
+
+  @media screen and (max-width: 1080px) {
+    width: 500px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 968px) {
+    width: 450px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 500px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 595px) {
+    width: 420px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 330px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 295px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 220px;
+    height: auto;
+  }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

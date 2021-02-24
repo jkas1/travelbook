@@ -7,7 +7,7 @@ export const Button = styled(Link)`
   border: 2px solid;
   border-color: #fff;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   white-space: nowrap;
   color: #fff;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
@@ -17,7 +17,6 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  text-transform: uppercase;
 
   &:hover {
     transition: all 0.2s ease-in-out;

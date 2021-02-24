@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   padding-top: 10px;
-  min-height: 692px;
+  min-height: 640px;
   position: fixed;
   bottom: 0;
   top: 0;
@@ -11,11 +11,16 @@ export const Container = styled.div`
   right: 0;
   z-index: 0;
   overflow: hidden;
+
   background: linear-gradient(
     90deg,
     rgba(148, 190, 202, 1) 0%,
     rgba(189, 222, 232, 1) 100%
   );
+
+  @media screen and (orientation: landscape) {
+    position: absolute;
+  }
 `;
 
 export const FormWrap = styled.div`
@@ -41,6 +46,10 @@ export const Icon = styled(Link)`
   align-items: center;
   font-family: "Teko", sans-serif;
   letter-spacing: 3px;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 34px;
+  }
 `;
 
 export const FormContent = styled.div`
@@ -48,6 +57,7 @@ export const FormContent = styled.div`
   height: 100%;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 480px) {
     padding: 10px;
@@ -61,12 +71,15 @@ export const Form = styled.form`
   width: 100%;
   z-index: 1;
   display: grid;
-  margin: auto auto 100px auto;
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    margin: 50px auto auto auto;
+  }
+
+  @media screen and (max-width: 420px) {
     padding: 32px 32px;
   }
 `;
@@ -77,14 +90,14 @@ export const FormH1 = styled.h1`
   font-size: 20px;
   font-weight: 400;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const FormLabel = styled.label`
   margin-bottom: 8px;
   font-size: 14px;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const FormInput = styled.input`
@@ -104,7 +117,7 @@ export const FormButton = styled.button`
   border: none;
   cursor: pointer;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const Text = styled.span`
@@ -112,5 +125,5 @@ export const Text = styled.span`
   text-align: center;
   color: #fff;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 `;
