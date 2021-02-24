@@ -30,6 +30,6 @@ export const homeObjThree = {
     "Ready to pack your bags? Join us now and we'll help you plan a perfect vacation package customized just for you.",
   buttonLabel: "Sign Up",
   imgStart: false,
-  img: require("../../images/img9.jpg"),
+  img: require("../../images/img6.jpg"),
   alt: "sign up image",
 };
